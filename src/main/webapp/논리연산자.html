@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+//논리연산자 종류
+//	||		or
+//	&&		and
+//	!		not
+
+
+document.write(true&&true, "<br>");
+//and 연산자 &&는 피연산자를 왼쪽부터 평가해 결과가 거짓이면 거짓이 나온 피연산자를 즉시 반환하고
+//거짓이 아니면 마지막에 평가되는 피연산자를 반환함
+document.write(true&&true&&true, "<br>");
+
+console.log("" && "cat");
+console.log(undefined && "cat");
+console.log(0 && "cat");
+console.log(null && "cat");
+
+
+//&&연산자는 첫번째 피 연산자의 공백, 0, undefined를 false로 평가하므로 두번째 연산자를 평가하지
+//않고 첫번째 피연산자의 값만을 반환함
+
+console.log("cat" && "dog");
+//"cat"은 자바스크립트에서 참으로 평가되어 두번째 피연산자 dog를 반환함
+console.log("cat" && "dog" && "bird");
+//"cat", "dog" 모두 참으로 평가되어 세번째 피연산자 bird를 반환함
+
+console.log(false || true || false);
+console.log(false || null || NaN);
+//or연산자는 피연산자를 왼쪽부터 평가해 참으로 평가된 피연산자를 즉시 반환함
+//모든 피연산자가 참으로 평가되지 않으면 마지막에 평가된 피연산자를 반환함
+
+console.log(!false); //true
+console.log(!(10>20 )); //true
+//not 연산자 !는 피연산자나 식을 평가한 논리값의 반대값을 반환함
+
+console.log(!(10<20 && 20<10 ));
+//!(true&&false = false) = !false = true
+
+</script>
+
+
+
+</body>
+</html>

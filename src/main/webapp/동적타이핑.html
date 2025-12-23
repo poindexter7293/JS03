@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+			주제 :  동적타이핑 단점
+				   개발자가 변수의 값이 변경되었다는 사실을 모르고
+				   코드를 작성하면 프로그램이 의도치 않게 동작하거나
+				   오류가 발생할수 있습니다.
+		*/
+		//1. 숫자 1을 저장 (number 타입)
+		let varA = 1;
+		
+		//(중간에 다른 코드가 많다고 가정)
+		
+		//2. 같은 변수에 문자열 다시 저장 (string 타입으로 자동 변경)
+		varA = '이정환';
+		
+		//(중간에 다른 코드가 많다고 가정)
+		
+		//3. 개발자가 varA 변수메모리의 값이 여전히 숫자가 저장되어 있다고 생각하고
+		//   ++ 연산 수행! 하지만 현재 varA변수 메모리 크기는 저장한 문자열의 크기이므로 오류(=NaN) 발생가능
+		//  이를 방지 하기 위해 삼항조건연산자 식 사용!
+		let result = (typeof varA === 'number')  ?  ++varA : '숫자가 아닙니다';
+		
+	
+	
+	</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+

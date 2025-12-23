@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	let number;		//number라는 이름의 변수 선언
+	number = 10;	//number 변수 메모리에 대입연산자 = 기호를 이용해 10을 저장함 
+	document.write(number, "<br>"); //10출력
+	
+	//number변수 메모리에 저장된 10을 변경해서 20으로 저장하려면?
+	//방법1. 20값을 number변수에 다시 대입연산자 = 기호로 대입
+	number = 20;
+	document.write(number, "<br>"); //20출력
+	
+	//방법2. number변수에 저장된 10에 + 10을 해서 20으로 만들어 저장
+	number = number+10;
+	document.write(number, "<br>"); //30출력
+	
+	//방법3. 복합대입연산자 +=기호 사용
+	number += 10;
+	document.write(number, "<br>"); //40출력	
+	
+	number -= 20;
+	document.write(number, "<br>"); //20출력
+	//순서1. number - 10을 계산함
+	//순서2. number - 10의 결과 데이터를 대입연산자 =를 이용해 앞 number변수 메모리에 다시 저장함
+	number = number * 10;
+	document.write(number, "<br>"); //200출력
+	
+	number /= 10;
+	document.write(number, "<br>"); //20출력
+	
+	number %= 10;
+	document.write(number, "<br>"); //0출력
+	
+	
+</script>
+
+
+</body>
+</html>

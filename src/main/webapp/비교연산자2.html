@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	let a=10, b=20, c=10, f = "20", result;
+	
+	//a변수에 저장된 값이 b변수에 저장된 값보다 크냐? 
+	//조건식 작성 후 조건식의 결과값을 result 변수에 저장
+	result = a > b; // 10 > 20 = false 	
+	console.log(result);
+	
+	//a변수에 저장된 값이 b변수에 저장된 값보다 작으냐?
+	//조건식 작성후 조건식의 결과 값을 result 변수에 저장
+	result = a < b; //10 < 20 = true
+	console.log(result);
+
+	//b변수에 저장된 값 20이 f 변수에 저장된 "20"과 숫자형태만 같으냐?
+	//조건식의 결과 값을 result 변수에 저장
+	result = b == f; //20 == "20" true
+	console.log(result);  	
+	
+	//b변수에 저장된 20과 a변수에 저장된 10이 다른게 맞냐?
+	//조건식의 결과 값을 result 변수에 저장함
+	result = a != b; //10 =/= "20" true
+	console.log(result);  		
+	
+	//b변수에 저장된 20과 f변수에 저장된 "20"이 숫자형태도 같고 자료형도 같으냐?
+	//조건식의 결과 값을 result 변수에 저장함
+	result = b === f; //20 =/= "20" false
+	console.log(result);  				
+	
+	//b변수에 저장된 20과 f변수에 저장된 "20"이 숫자형태도 다르고 자료형도 다르냐?
+	//조건식의 결과 값을 result 변수에 저장함
+	result = b !== f; //20 =/= "20" true
+	console.log(result);  				
+	
+</script>
+</body>
+</html>

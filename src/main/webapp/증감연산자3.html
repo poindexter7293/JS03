@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+
+	let a = 3; let b = 4; let c = 
+	a++
+	//c=3 a=4(a+1)
+	+ ++b 
+	//c=8(a + b+1) b=5(b+1)
+	+ b++
+	//c=13(a + b+1 + b+1) b=6(b+1+1)
+	+ ++a; 
+	//c=18(a + b+1 + b+1 + a+1+1)  a=5(a+1+1)
+
+
+	console.log(a); //5
+	console.log(b);	//6
+	console.log(c);	//18
+	// a++ : 후위증감연산자로 가산되지 않은 a값(3) 더해짐(3)
+	// + ++b : 전위증감연산자로 1회 가산된 b값(4+1) 더해짐 (8)
+	// + b++ : 후위증감연산자로 1회만 가산된 b값(4+1) 더해짐 (13)
+	// + ++a : 전위증감연산자로 2회 가산된 a값(3+1+1) 더해짐 (18)
+	// a, b는 각각 2회 가산되어 3, 4 + 2 = 5, 6
+
+
+</script>
+</body>
+</html>
